@@ -76,7 +76,7 @@
 
 #landing-section{
     width: 100%;
-    height: 97vh;
+    height: 100vh;
     background-image: url("./images/landing-background.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -178,7 +178,7 @@
     margin-top: 35px;
 }
 
-#store-section > h3{
+.heading{
     margin:0;
     margin-bottom: 8px;
     font-size: 44px;
@@ -186,17 +186,21 @@
 }
 
 .store-dec{
-    margin:0;
+    margin:0 auto;
     margin-bottom: 55px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 550;
     color: #8b8b99;
-    letter-spacing: 00.5px;
+    letter-spacing: 0.5px;
+    max-width: 700px;
 }
 
 .store-item-wrapper{
     display: flex;
     width: 100%;
+    max-width: 1140px;
+    /* justify-content: stretch; */
+    margin: 0 auto; 
 
 }
 .store-item{
@@ -213,4 +217,66 @@
     margin-right: 10px;
     color: white;
     display: inline-block;
+    transition: all 0.3s;
+}
+
+.store-item:hover .store-icon-wrapper{
+    transform: scale(1.1, 1.1);
+}
+.store-icon-wrapper i{
+    font-size: 60px;
+}
+
+.store-item h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.store-item p{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 550;
+    color: #8b8b99;
+}
+#testimonials-section{
+    width: 100%;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.testimonials-wrapper{
+    width: 100%;
+    display: flex;
+    max-width: 1140px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.testimonial-items{
+    margin: 16px;
+    padding: 40px 30px;
+    background-color: #f5f6fb;
+    width: 25%;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+.testimonial-items:hover{
+    box-shadow: 5px 10px;
+}
+
+.testimonial-items > img{
+    border-radius: 50%;
+    width: 80px;
+}
+.testimonial-message{
+    font-size: 16px;
+    font-style: italic;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.3;
 }
