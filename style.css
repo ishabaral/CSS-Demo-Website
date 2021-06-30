@@ -92,6 +92,15 @@
     align-items: center;
     justify-content: center;
 }
+@media (max-width: 800px) {
+    .navbar, #landing-section, .main-text-wrapper{
+        width: 100%;
+    }
+
+    .menu-items> div{
+        display: none;
+    }
+}
 
 .main-text-wrapper h1{
     width: 81%;
@@ -119,6 +128,12 @@
     display: flex;
 }
 
+@media only screen and (max-width: 800px) {
+    #step-section{
+        flex-direction: column;
+    }
+}
+
 #first-step{
     background-color: #5acda6;
 }
@@ -140,6 +155,7 @@
     color: white;
     box-sizing: border-box;
 }
+
 
 .step-item i{
     font-size: 96px;
@@ -168,6 +184,12 @@
     text-align: center;
     padding-top: 75px;
     padding-bottom: 75px;
+}
+
+@media (max-width:800px) {
+    .step-item, #store-section{
+        width: 100%;
+    }
 }
 
 .fresh-food-heading{
@@ -202,12 +224,21 @@
     max-width: 1140px;
     /* justify-content: stretch; */
     margin: 0 auto; 
-
 }
+
 .store-item{
     width: 25%;
     text-align: center;
     padding: 24px;
+}
+@media (max-width: 800px) {
+    .store-item-wrapper{
+        flex-direction: column;
+    }
+
+    .store-item{
+        width: 90%;
+    }
 }
 
 .store-icon-wrapper{
@@ -254,6 +285,11 @@
     align-items: center;
     margin: 0 auto;
 }
+@media (max-width: 800px) {
+    .testimonials-wrapper{
+        flex-direction: column;
+    }
+}
 
 .testimonial-items{
     margin: 16px;
@@ -264,6 +300,12 @@
     border-bottom-right-radius: 45px;
     transition: box-shadow 0.3s;
 }
+@media (max-width: 800px) {
+    .testimonial-items{
+        width: 80%;
+    }
+}
+
 .testimonial-items:hover{
     box-shadow: 0 12px 16px 0 rgb(39, 39, 47, 0.05);
 }
@@ -288,6 +330,11 @@
     display: flex;
     justify-content: stretch;
 }
+@media (max-width: 800px) {
+    #follow-section{
+        flex-direction: column;
+    }
+}
 
 .left-section{
     width: 67%;
@@ -305,6 +352,11 @@
     background-image: url("https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png");
     background-position: left;
     background-size: cover;
+}
+@media (max-width: 800px) {
+    .left-section, .right-section{
+        width: 100%;
+    }
 }
 
 .right-section .text-wrapper{
@@ -373,6 +425,11 @@
     margin: 0 auto;
     padding: 100px 0;
 }
+@media (max-width: 800px) {
+    .stats-item-wrapper{
+        flex-direction: column;
+    }
+}
 
 .stats-item{
     margin: 0 auto;
@@ -429,8 +486,17 @@
     display: flex;
     justify-content: space-between;
     max-width: 1140px;
-    padding: 100px 0;
+    padding: 100px 30px;
     margin: 0 auto;
+}
+@media (max-width: 800px) {
+    #address-section{
+       width: 100%;
+    }
+    .address-wrapper{
+       flex-direction: column;
+       width: 85%;
+   }
 }
 
 .left-address{
@@ -438,6 +504,11 @@
 }
 .right-address{
     width: 40%;
+}
+@media (max-width: 800px) {
+   .left-address, .right-address{
+       width: 80%;
+   }
 }
 
 .address-desc{
@@ -467,7 +538,7 @@
 }
 
 .right-address textarea{
-    width: 456px;
+    width: 100%;
     height: 87px;
 }
 
