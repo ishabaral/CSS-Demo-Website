@@ -283,6 +283,7 @@
 
 #follow-section{
     width: 100%;
+    /* height: 100vh; */
     display: flex;
     justify-content: stretch;
 }
@@ -355,4 +356,36 @@
     background-color: transparent;
     border: 1px solid #f69dad;
     color: #f69dad;
+}
+
+#stats-section{
+    width: 100%;
+    background-color: #f6fcfa;
+}
+
+.stats-item-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+    max-width: 1140px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.stats-item{
+    margin: 0 auto;
+}
+.stats-item h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.stats-item p{
+    color: #57e3b5;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+
 }
